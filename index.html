@@ -7,86 +7,129 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#main">Home</a>
 
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#main">Home</a>
             <a href="#message">Contact me</a>
         </nav>
     </header>
 
-    <main id="main">
-    <h1>Learn about me</h1>
-        <ul>
-            <li>Name: Leigh Juliette D. Bautista</li>
-            <li>Birthday: January ##, 2007</li>
-            <li>Age: 19</li>
-            <li>Zodiac Sign: Capricorn</li>
-            <li>Address: Somewhere in Montalban</li>
-        </ul>
-    <img src="https://static.vecteezy.com/system/resources/thumbnails/069/889/835/small/charming-pink-flowers-beneath-a-colorful-sunset-sky-with-wispy-clouds-and-electric-wires-in-a-scenic-landscape-photo.jpeg" 
-    alt="Pink flowers and the sky" width="600">
+    <main id="main" class="maincontent">
 
-        <section>
-        <h2>My skills</h2>
+        <section class="profile-card">
+            <h1 class="header1">Learn about me</h1>
+
+            <ul class="info-list">
+                <li>Name: Leigh Juliette D. Bautista</li>
+                <li>Birthday: January ##, 2007</li>
+                <li>Age: 19</li>
+                <li>Zodiac Sign: Capricorn</li>
+                <li>Address: Somewhere in Montalban</li>
+            </ul>
+
+            <img class="cover-image" src="https://static.vecteezy.com/system/resources/thumbnails/069/889/835/small/charming-pink-flowers-beneath-a-colorful-sunset-sky-with-wispy-clouds-and-electric-wires-in-a-scenic-landscape-photo.jpeg"
+                alt="Pink flowers and the sky" width="600">
+        </section>
+
+
+        <section class="skills-section">
+            <h2 class="header2">My skills</h2>
+
             <table class="content-table">
-                <caption>These are some of the things that I can do</caption>
-                <tr>
-                    <th scope="col">Talent</th>
-                    <th scope="col">Level</th>
-                    <th scope="col">Description</th>
-                </tr>
-                <tr>
-                    <td>Badminton</td>
-                    <td>Intermediate</td>
-                    <td>Weak smash, good footwork</td>
-                </tr>
-                <tr>
-                    <td>Canva</td>
-                    <td>Master</td>
-                    <td>More to learn but better than before</td>
-                </tr>   
-                <tr>
-                    <td>Photoshop editing</td>
-                    <td>Intermediate</td>
-                    <td>gud</td>
-                </tr>        
-                <tr>
-                    <td>Cooking</td>
-                    <td>Beginner</td>
-                    <td>Still at the frying state</td>
-                </tr>                      
-            </table>
+                <caption>
+                    These are some of the things that I can do
+                </caption>
 
-            <article id="message">
-            <h2>My contacts</h2>
-            <ul>
+                <thead>
+                    <tr>
+                        <th scope="col">Talent</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Badminton</td>
+                        <td>Intermediate</td>
+                        <td>Weak smash, good footwork</td>
+                    </tr>
+
+                    <tr>
+                        <td>Canva</td>
+                        <td>Master</td>
+                        <td>More to learn but better than before</td>
+                    </tr>
+
+                    <tr>
+                        <td>Photoshop editing</td>
+                        <td>Intermediate</td>
+                        <td>Gud</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cooking</td>
+                        <td>Beginner</td>
+                        <td>Still at the frying state</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <article id="message" class="contact-card">
+            <h2 class="header2">My contacts</h2>
+
+            <ul class="contact-list">
                 <li>Facebook: Leigh Bautista</li>
                 <li>Instagram: @idon'tuse</li>
                 <li>Contact Number: +9 676767676767</li>
             </ul>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required><br>
-                    <label for="number">Phone Number:</label>
-                    <input type="number" id="number" required><br>  
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" required><br>
-                    <label for="urgency">How urgent is it?</label>
-                    <select name = "urgency_choice" id="urgency" required>
-                        <option value="very">Very Urgent</option>
-                        <option value="kinda">Kind of Urgent</option>
-                        <option value="not">Not Urgent at all</option>
-                    </select>                                                            
-                    <button type="send" id="btn">Send Message</button>
-                </form>
-            </article>
-        </section>
+
+            <form class="contact-form">
+                    <h2>Send me a message</h2>
+
+                    <p class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="number">Phone Number:</label>
+                        <input type="tel" id="number" name="number" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="urgency">How urgent is it?</label>
+
+                        <select name="urgency_choice" id="urgency" required>
+                            <option value="very">Very Urgent</option>
+                            <option value="kinda">Kind of Urgent</option>
+                            <option value="not">Not Urgent at all</option>
+                        </select>
+                    </p>
+
+                    <button type="submit" id="btn" class="button">
+                        Send Message
+                    </button>
+
+            </form>
+        </article>
+
     </main>
 
-    <footer>
+
+    <footer class="footer">
         <p>Midterm practical of Leigh Juliette Bautista</p>
     </footer>
+
 </body>
 </html>
