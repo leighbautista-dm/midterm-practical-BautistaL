@@ -1,5 +1,4 @@
 :root {
-    /* Colors */
     --background: #fff7fb;
     --white: #ffffff;
     --primary: #9d174d;
@@ -8,13 +7,11 @@
     --border: #e5b8cd;
     --focus: #1d4ed8;
 
-    /* Spacing */
     --space-small: 8px;
     --space-medium: 16px;
     --space-large: 24px;
     --space-xl: 32px;
 
-    /* Font sizes */
     --text-small: 14px;
     --text-normal: 16px;
     --text-large: 24px;
@@ -37,6 +34,7 @@ body {
     font-size: var(--text-normal);
     line-height: 1.6;
 }
+
 h1 {
     color: var(--dark);
     font-size: var(--text-title);
@@ -46,6 +44,7 @@ h2 {
     color: var(--dark);
     font-size: var(--text-large);
 }
+
 .header {
     background-color: var(--dark);
     padding: var(--space-medium);
@@ -63,19 +62,23 @@ h2 {
     font-weight: bold;
     text-decoration: none;
 }
+
 .navbar a:hover {
     background-color: var(--primary);
     text-decoration: underline;
 }
+
 .navbar a:focus {
     outline: 3px solid var(--focus);
 }
+
 .maincontent {
     width: 90%;
     max-width: 900px;
     margin: auto;
     padding: var(--space-xl) 0;
 }
+
 .profile-card {
     margin-bottom: var(--space-xl);
     padding: var(--space-large);
@@ -96,6 +99,7 @@ h2 {
     margin: var(--space-large) auto 0;
     border-radius: 10px;
 }
+
 .skills-section {
     margin-bottom: var(--space-xl);
 }
@@ -125,6 +129,7 @@ h2 {
 .content-table tr:hover {
     background-color: #f8d9e8;
 }
+
 .contact-card {
     margin-top: var(--space-xl);
     padding: var(--space-large);
@@ -132,6 +137,7 @@ h2 {
     border: 1px solid var(--border);
     border-radius: 10px;
 }
+
 .form-group {
     margin-bottom: var(--space-medium);
 }
@@ -152,14 +158,17 @@ select {
     border-radius: 5px;
     font-size: var(--text-normal);
 }
+
 input:hover,
 select:hover {
     border-color: var(--primary);
 }
+
 input:focus,
 select:focus {
     outline: 3px solid var(--focus);
 }
+
 .button {
     padding: var(--space-small) var(--space-medium);
     background-color: var(--primary);
@@ -171,15 +180,14 @@ select:focus {
     cursor: pointer;
 }
 
-/* Hover state */
 .button:hover {
     background-color: var(--dark);
 }
 
-/* Focus state */
 .button:focus {
     outline: 3px solid var(--focus);
 }
+
 .footer {
     padding: var(--space-large);
     background-color: var(--dark);
@@ -190,8 +198,8 @@ select:focus {
 .footer p {
     color: var(--white);
 }
-@media (max-width: 600px) {
 
+@media (max-width: 600px) {
     .maincontent {
         width: 95%;
     }
