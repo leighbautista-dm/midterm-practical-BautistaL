@@ -1,0 +1,204 @@
+:root {
+    --background: #fff7fb;
+    --white: #ffffff;
+    --primary: #9d174d;
+    --dark: #701a3a;
+    --text: #2b1b24;
+    --border: #e5b8cd;
+    --focus: #1d4ed8;
+
+    --space-small: 8px;
+    --space-medium: 16px;
+    --space-large: 24px;
+    --space-xl: 32px;
+
+    --text-small: 14px;
+    --text-normal: 16px;
+    --text-large: 24px;
+    --text-title: 32px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: var(--text-normal);
+    line-height: 1.6;
+}
+h1 {
+    color: var(--dark);
+    font-size: var(--text-title);
+}
+
+h2 {
+    color: var(--dark);
+    font-size: var(--text-large);
+}
+.header {
+    background-color: var(--dark);
+    padding: var(--space-medium);
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    margin: 0 var(--space-small);
+    padding: var(--space-small);
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: var(--primary);
+    text-decoration: underline;
+}
+.navbar a:focus {
+    outline: 3px solid var(--focus);
+}
+.maincontent {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: var(--space-xl) 0;
+}
+.profile-card {
+    margin-bottom: var(--space-xl);
+    padding: var(--space-large);
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.info-list {
+    padding-left: var(--space-large);
+}
+
+.cover-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: var(--space-large) auto 0;
+    border-radius: 10px;
+}
+.skills-section {
+    margin-bottom: var(--space-xl);
+}
+
+.content-table {
+    width: 100%;
+    background-color: var(--white);
+    border-collapse: collapse;
+}
+
+.content-table th,
+.content-table td {
+    padding: var(--space-small);
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+.content-table th {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.content-table tr:nth-child(even) {
+    background-color: #fceef5;
+}
+
+.content-table tr:hover {
+    background-color: #f8d9e8;
+}
+.contact-card {
+    margin-top: var(--space-xl);
+    padding: var(--space-large);
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+.form-group {
+    margin-bottom: var(--space-medium);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-small);
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: var(--space-small);
+    color: var(--text);
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: var(--text-normal);
+}
+input:hover,
+select:hover {
+    border-color: var(--primary);
+}
+input:focus,
+select:focus {
+    outline: 3px solid var(--focus);
+}
+.button {
+    padding: var(--space-small) var(--space-medium);
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--text-normal);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hover state */
+.button:hover {
+    background-color: var(--dark);
+}
+
+/* Focus state */
+.button:focus {
+    outline: 3px solid var(--focus);
+}
+.footer {
+    padding: var(--space-large);
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer p {
+    color: var(--white);
+}
+@media (max-width: 600px) {
+
+    .maincontent {
+        width: 95%;
+    }
+
+    .content-table {
+        font-size: var(--text-small);
+    }
+
+    .content-table th,
+    .content-table td {
+        padding: 6px;
+    }
+}
